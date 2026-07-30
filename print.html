@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DM Home Improvement - 14-Page Printed Bathroom Design Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    /* DESIGN SYSTEM COLOR PALETTE & TYPOGRAPHY */
+    :root {
+      --navy: #001A33;
+      --linen: #F9F9F9;
+      --gold: #C5A059;
+      --oxblood: #660000;
+      --text-dark: #1C2228;
+      --text-light: #F9F9F9;
+      --font-headline: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+      --font-sub: 'Montserrat', sans-serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: #E2E8F0;
+      color: var(--text-dark);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* SCREEN CONTROL BAR */
+    .no-print-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: #001A33;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 32px;
+      z-index: 9999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .no-print-bar h2 {
+      font-family: var(--font-headline);
+      font-size: 1.2rem;
+      color: var(--gold);
+    }
+
+    .print-btn {
+      background: linear-gradient(135deg, var(--gold), #a3803c);
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 4px;
+      font-family: var(--font-sub);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: all 0.2s ease;
+    }
+
+    .print-btn:hover {
+      background: #D4AF37;
+      transform: translateY(-1px);
+    }
+
+    .pages-container {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      padding-bottom: 80px;
+    }
+
+    /* 11" x 8.5" LANDSCAPE PAGE SPECIFICATION */
+    .page {
+      width: 11in;
+      height: 8.5in;
+      background-color: var(--linen);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+      page-break-after: always;
+      page-break-inside: avoid;
+    }
+
+    /* PAGE STYLINGS */
+    
+    /* PAGE 1: COVER */
+    .page-1 {
+      background-color: var(--navy);
+      color: #FFFFFF;
+    }
+    .p1-bg-img {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.65;
+    }
+    .p1-overlay {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(to bottom, rgba(0,26,51,0.7) 0%, rgba(0,26,51,0.4) 50%, rgba(0,26,51,0.9) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8in 1in;
+      text-align: center;
+    }
+    .p1-header-logo {
+      height: 100px;
+      width: auto;
+      background: #FFFFFF;
+      padding: 6px;
+      border-radius: 6px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+    .p1-title {
+      font-family: var(--font-headline);
+      font-size: 3.2rem;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .p1-subtitle {
+      font-family: var(--font-sub);
+      font-size: 1.1rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #F9F9F9;
+      font-weight: 300;
+    }
+    .p1-footer {
+      font-family: var(--font-sub);
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-top: 1px solid var(--gold);
+      padding-top: 12px;
+      width: 80%;
+    }
+
+    /* PAGE 2: WELCOME */
+    .page-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0.8in;
+      gap: 0.6in;
+      align-items: center;
+    }
+    .p2-text-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .page-tag {
+      font-family: var(--font-sub);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .p2-title {
+      font-family: var(--font-headline);
+      font-size: 2.2rem;
+      color: var(--oxblood);
+      letter-spacing: 0.02em;
+      line-height: 1.25;
+      margin-bottom: 24px;
+    }
+    .p2-body {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #334155;
+      margin-bottom: 28px;
+    }
+    .p2-signoff {
+      font-family: var(--font-headline);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--navy);
+      border-left: 2px solid var(--gold);
+      padding-left: 16px;
+    }
+    .p2-img-side img {
+      width: 100%;
+      height: 5.2in;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    /* PAGE 3: BRONZE DIVIDER */
+    .page-divider {
+      background-color: var(--navy);
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1in;
+      border: 12px solid var(--navy);
+    }
+    .divider-inner-frame {
+      border: 1px solid var(--gold);
+      padding: 1.2in 1.5in;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .divider-title {
+      font-family: var(--font-headline);
+      font-size: 3.4rem;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .divider-tagline {
+      font-family: var(--font-sub);
+      font-size: 1.15rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+      font-weight: 300;
+    }
+    .divider-summary {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: #94A3B8;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    /* PAGE 4: THE ASHFORD */
+    .page-design-split {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      height: 100%;
+    }
+    .design-img-col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .design-sidebar {
+      background-color: #FFFFFF;
+      padding: 0.6in 0.4in;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 1px solid #E2E8F0;
+    }
+    .design-name {
+      font-family: var(--font-headline);
+      font-size: 2.2rem;
+      color: var(--oxblood);
+      margin-bottom: 6px;
+    }
+    .design-tag {
+      font-family: var(--font-sub);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .sidebar-section-title {
+      font-family: var(--font-sub);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 4px;
+    }
+    .sidebar-list {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+    .sidebar-list li {
+      font-size: 0.82rem;
+      color: #334155;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sidebar-list li::before {
+      content: '•';
+      color: var(--gold);
+      font-size: 1.2rem;
+    }
+    .personalize-note-box {
+      background: var(--linen);
+      border: 1px solid #E2E8F0;
+      padding: 16px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    /* PAGE 5: PERSONALIZING YOUR DESIGN */
+    .page-5 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      height: 100%;
+    }
+    .p5-img-col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .p5-text-col {
+      padding: 0.8in 0.6in;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--linen);
+    }
+    .p5-timeline {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+    }
+    .p5-timeline-step {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #FFFFFF;
+      padding: 16px 20px;
+      border-radius: 8px;
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .p5-step-num {
+      width: 32px;
+      height: 32px;
+      background: var(--gold);
+      color: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .p5-step-text {
+      font-family: var(--font-sub);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    /* PAGE 7: THE BRIGHTON (FULL BLEED WITH TRANSLUCENT BOX) */
+    .page-7 {
+      position: relative;
+    }
+    .p7-full-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .p7-overlay-box {
+      position: absolute;
+      bottom: 0.6in;
+      left: 0.8in;
+      right: 0.8in;
+      background: rgba(0, 26, 51, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--gold);
+      padding: 0.4in 0.6in;
+      color: #FFFFFF;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .p7-left h3 {
+      font-family: var(--font-headline);
+      font-size: 2.2rem;
+      color: var(--gold);
+    }
+    .p7-left p {
+      font-family: var(--font-sub);
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #E2E8F0;
+    }
+    .p7-right p {
+      font-size: 0.88rem;
+      color: #CBD5E1;
+      max-width: 450px;
+      line-height: 1.5;
+    }
+
+    /* PAGE 8: GOLD DIVIDER (OXBLOOD RED HEADLINE) */
+    .divider-gold-title {
+      font-family: var(--font-headline);
+      font-size: 3.4rem;
+      color: var(--oxblood);
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    /* PAGE 9: THE SOMERSET / RIVIERA SPREAD */
+    .page-9 {
+      position: relative;
+      background-color: #000;
+    }
+    .p9-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.9;
+    }
+    .p9-badge {
+      position: absolute;
+      top: 0.8in;
+      left: 0.8in;
+      background: rgba(0,0,0,0.6);
+      border: 1px solid var(--gold);
+      padding: 12px 24px;
+      border-radius: 4px;
+      color: #FFFFFF;
+    }
+    .p9-badge h2 {
+      font-family: var(--font-headline);
+      font-size: 2rem;
+      color: var(--gold);
+    }
+    .p9-badge p {
+      font-family: var(--font-sub);
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    /* PAGE 10: WHITE GLOVE EXPERIENCE */
+    .page-10 {
+      padding: 0.8in;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .p10-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5in;
+      align-items: center;
+    }
+    .p10-pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .pillar-card {
+      background: #FFFFFF;
+      padding: 16px;
+      border-radius: 6px;
+      border: 1px solid #E2E8F0;
+    }
+    .pillar-card h4 {
+      font-family: var(--font-sub);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+    .pillar-card p {
+      font-size: 0.78rem;
+      color: #64748B;
+      line-height: 1.4;
+    }
+
+    /* PAGE 11: TIMELINE */
+    .page-11 {
+      padding: 1in 0.8in;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--navy);
+      color: #FFFFFF;
+    }
+    .h-timeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-top: 0.8in;
+      position: relative;
+    }
+    .h-timeline::before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: var(--gold);
+      z-index: 1;
+    }
+    .h-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .h-num {
+      width: 48px;
+      height: 48px;
+      background: var(--navy);
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-headline);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .h-step h4 {
+      font-family: var(--font-sub);
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .h-step p {
+      font-size: 0.75rem;
+      color: #94A3B8;
+      line-height: 1.4;
+    }
+
+    /* PAGE 12: FAQ */
+    .page-12 {
+      padding: 0.8in;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.4in;
+      margin-top: 0.4in;
+    }
+    .faq-box h4 {
+      font-family: var(--font-headline);
+      font-size: 1.15rem;
+      color: var(--oxblood);
+      margin-bottom: 8px;
+    }
+    .faq-box p {
+      font-size: 0.85rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    /* PAGE 13: WELCOME HOME */
+    .page-13 {
+      position: relative;
+    }
+    .p13-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .p13-overlay {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 26, 51, 0.45);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 1in;
+    }
+    .p13-overlay h2 {
+      font-family: var(--font-headline);
+      font-size: 3rem;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .p13-overlay p {
+      font-family: var(--font-sub);
+      font-size: 1.4rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    /* PAGE 14: BACK COVER */
+    .page-14 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1in;
+      text-align: center;
+      background-color: var(--linen);
+    }
+    .p14-center-logo {
+      height: 220px;
+      width: auto;
+      background: #FFFFFF;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+      margin-top: 0.5in;
+    }
+    .p14-contact-box {
+      border-top: 1px solid var(--gold);
+      padding-top: 24px;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .p14-info {
+      text-align: left;
+    }
+    .p14-info h4 {
+      font-family: var(--font-headline);
+      font-size: 1.4rem;
+      color: var(--navy);
+    }
+    .p14-info p {
+      font-size: 0.85rem;
+      color: #475569;
+      margin-top: 4px;
+    }
+    .p14-qr-box {
+      text-align: center;
+    }
+    .p14-qr-img {
+      width: 90px;
+      height: 90px;
+      background: #000;
+      padding: 6px;
+      border-radius: 6px;
+    }
+
+    /* PRINT STYLESHEET */
+    @media print {
+      .no-print-bar {
+        display: none !important;
+      }
+      body {
+        background-color: #FFFFFF;
+      }
+      .pages-container {
+        margin-top: 0;
+        padding-bottom: 0;
+        gap: 0;
+      }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        width: 11in;
+        height: 8.5in;
+      }
+      @page {
+        size: 11in 8.5in;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Control Toolbar -->
+  <div class="no-print-bar">
+    <h2>DM Home Improvement — 14-Page Printed Portfolio (Landscape 11" x 8.5")</h2>
+    <button class="print-btn" onclick="window.print()">🖨️ Print / Save to PDF (14 Pages)</button>
+  </div>
+
+  <div class="pages-container">
+
+    <!-- PAGE 1: COVER -->
+    <div class="page page-1">
+      <img src="assets/images/cover_spa.jpg" alt="Luxury Spa Cover Rendering" class="p1-bg-img">
+      <div class="p1-overlay">
+        <img src="assets/images/logo.png" alt="DM Home Improvement Logo" class="p1-header-logo">
+        <div>
+          <h1 class="p1-title">Bathroom Design Portfolio</h1>
+          <p class="p1-subtitle">Curated Bathroom Collections</p>
+        </div>
+        <div class="p1-footer">The DM Turnkey White Glove Experience™</div>
+      </div>
+    </div>
+
+    <!-- PAGE 2: WELCOME -->
+    <div class="page page-2">
+      <div class="p2-text-side">
+        <span class="page-tag">Welcome</span>
+        <h2 class="p2-title">Designing Your Dream Bathroom Starts Here</h2>
+        <p class="p2-body">
+          A bathroom remodel is more than selecting fixtures, tile, or paint colors. It's an opportunity to create a space that reflects your style, supports your lifestyle, and brings lasting comfort to your home.<br><br>
+          Instead of asking you to sort through hundreds of products and endless decisions, we've created professionally curated bathroom collections that combine timeless design, quality craftsmanship, and thoughtful coordination into complete environments.
+        </p>
+        <p class="p2-signoff">"Welcome to a better remodeling experience." — Danielle & Derek Myers</p>
+      </div>
+      <div class="p2-img-side">
+        <img src="assets/images/consultation.jpg" alt="Design Consultation Lifestyle">
+      </div>
+    </div>
+
+    <!-- PAGE 3: BRONZE COLLECTION DIVIDER -->
+    <div class="page page-divider">
+      <div class="divider-inner-frame">
+        <span class="page-tag">Curated Portfolio Tier</span>
+        <h1 class="divider-title">BRONZE COLLECTION</h1>
+        <p class="divider-tagline">Simple. Beautiful. Designed to Last.</p>
+        <p class="divider-summary">A curated approach combining timeless style, durable materials, and exceptional craftsmanship into complete, coordinated bathroom spaces.</p>
+      </div>
+    </div>
+
+    <!-- PAGE 4: THE ASHFORD (BRONZE DESIGN) -->
+    <div class="page page-design-split">
+      <div class="design-img-col">
+        <img src="assets/images/ashford.jpg" alt="The Ashford Rendering">
+      </div>
+      <div class="design-sidebar">
+        <div>
+          <span class="page-tag">Bronze Collection</span>
+          <h2 class="design-name">THE ASHFORD</h2>
+          <p class="design-tag">Clean. Comfortable. Timeless.</p>
+          
+          <h4 class="sidebar-section-title">Curated Inclusions</h4>
+          <ul class="sidebar-list">
+            <li>Harlow Transitional Vanity</li>
+            <li>Marble-Look Luxury Vinyl Plank</li>
+            <li>Brushed Nickel Fixtures</li>
+            <li>Matching Mirror & Lighting</li>
+            <li>Soft Greige Wall Paint Tone</li>
+          </ul>
+        </div>
+        <div class="personalize-note-box">
+          <strong>Personalization Available:</strong> Danielle will guide you through finish selections while preserving design integrity.
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 5: PERSONALIZING YOUR DESIGN -->
+    <div class="page page-5">
+      <div class="p5-img-col">
+        <img src="assets/images/swatches.jpg" alt="Design Finish Swatches Flatlay">
+      </div>
+      <div class="p5-text-col">
+        <span class="page-tag">Tailored Flexibility</span>
+        <h2 class="p2-title">Designed Around You</h2>
+        <p class="p2-body">
+          Rather than starting from scratch, you'll begin with a professionally curated design and refine it with carefully selected finish options under expert guidance.
+        </p>
+
+        <div class="p5-timeline">
+          <div class="p5-timeline-step">
+            <div class="p5-step-num">1</div>
+            <div class="p5-step-text">Choose Base Collection</div>
+          </div>
+          <div class="p5-timeline-step">
+            <div class="p5-step-num">2</div>
+            <div class="p5-step-text">Personalize Finishes</div>
+          </div>
+          <div class="p5-timeline-step">
+            <div class="p5-step-num">3</div>
+            <div class="p5-step-text">Enjoy Your Dream Bathroom</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 6: SILVER COLLECTION DIVIDER -->
+    <div class="page page-divider">
+      <div class="divider-inner-frame">
+        <span class="page-tag">Curated Portfolio Tier</span>
+        <h1 class="divider-title">SILVER COLLECTION</h1>
+        <p class="divider-tagline">Custom. Refined. Timeless.</p>
+        <p class="divider-summary">Elevated architectural elements and bespoke material coordination engineered for discerning homeowners.</p>
+      </div>
+    </div>
+
+    <!-- PAGE 7: THE BRIGHTON (SILVER DESIGN) -->
+    <div class="page page-7">
+      <img src="assets/images/brighton.jpg" alt="The Brighton Silver Design" class="p7-full-img">
+      <div class="p7-overlay-box">
+        <div class="p7-left">
+          <h3>THE BRIGHTON</h3>
+          <p>Silver Collection — Custom Boutique Aesthetic</p>
+        </div>
+        <div class="p7-right">
+          <p>Features natural warm oak cabinetry, wall-mounted matte black architectural hardware, textured grey porcelain accent tile, and halo LED backlit illumination.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 8: GOLD COLLECTION DIVIDER -->
+    <div class="page page-divider">
+      <div class="divider-inner-frame">
+        <span class="page-tag">Curated Portfolio Tier</span>
+        <h1 class="divider-gold-title">GOLD COLLECTION</h1>
+        <p class="divider-tagline">Luxury Without Compromise.</p>
+        <p class="divider-summary">The ultimate statement in master suite remodeling—featuring freestanding soaking tubs, floor-to-ceiling Calacatta marble, and thermostatic brass suites.</p>
+      </div>
+    </div>
+
+    <!-- PAGE 9: THE SOMERSET / RIVIERA SPREAD -->
+    <div class="page page-9">
+      <img src="assets/images/riviera.jpg" alt="The Somerset Gold Suite" class="p9-img">
+      <div class="p9-badge">
+        <h2>THE RIVIERA & SOMERSET</h2>
+        <p>The Ultimate Sanctuary</p>
+      </div>
+    </div>
+
+    <!-- PAGE 10: THE WHITE GLOVE EXPERIENCE -->
+    <div class="page page-10">
+      <div>
+        <span class="page-tag">The DM Distinction</span>
+        <h2 class="p2-title">The DM Turnkey White Glove Experience™</h2>
+        <p class="p2-body" style="margin-bottom:0;">
+          Remodeling Should Feel Exciting — Not Overwhelming. You enjoy the transformation. We handle everything else.
+        </p>
+      </div>
+
+      <div class="p10-grid">
+        <img src="assets/images/craftsman.jpg" alt="Master Craftsman Precision Tile Installation" style="width:100%; height:3.2in; object-fit:cover; border-radius:8px;">
+        <div class="p10-pillars">
+          <div class="pillar-card">
+            <h4>Professional Management</h4>
+            <p>Carefully planned & coordinated from start to finish.</p>
+          </div>
+          <div class="pillar-card">
+            <h4>Respect for Your Home</h4>
+            <p>Maintaining clean work areas and protecting floorings.</p>
+          </div>
+          <div class="pillar-card">
+            <h4>Clear Communication</h4>
+            <p>Always knowing what to expect next.</p>
+          </div>
+          <div class="pillar-card">
+            <h4>Exceptional Craftsmanship</h4>
+            <p>Every detail executed with precision and pride.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 11: REMODELING JOURNEY TIMELINE -->
+    <div class="page page-11">
+      <span class="page-tag" style="text-align:center;">Simple 5-Step Process</span>
+      <h2 class="p1-title" style="text-align:center; font-size:2.6rem;">A Clear Process. A Beautiful Result.</h2>
+      
+      <div class="h-timeline">
+        <div class="h-step">
+          <div class="h-num">01</div>
+          <h4>DISCOVER</h4>
+          <p>Explore curated collections and outline your vision.</p>
+        </div>
+        <div class="h-step">
+          <div class="h-num">02</div>
+          <h4>PERSONALIZE</h4>
+          <p>Tailor key finishes with Danielle's expert guidance.</p>
+        </div>
+        <div class="h-step">
+          <div class="h-num">03</div>
+          <h4>PREPARE</h4>
+          <p>Finalize selections, confirm timelines & order materials.</p>
+        </div>
+        <div class="h-step">
+          <div class="h-num">04</div>
+          <h4>BUILD</h4>
+          <p>Craftsmen bring your space to life with care & precision.</p>
+        </div>
+        <div class="h-step">
+          <div class="h-num">05</div>
+          <h4>ENJOY</h4>
+          <p>Walkthrough together and enjoy your new sanctuary.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 12: PEACE OF MIND (FAQ) -->
+    <div class="page page-12">
+      <span class="page-tag">Peace of Mind</span>
+      <h2 class="p2-title">Answers to Common Questions</h2>
+
+      <div class="faq-grid">
+        <div class="faq-box">
+          <h4>Will my home become a construction zone?</h4>
+          <p>We understand that we're guests in your home. Our team takes great care to protect surrounding areas, maintain an organized workspace, and clean up daily.</p>
+        </div>
+        <div class="faq-box">
+          <h4>How long will my bathroom remodel take?</h4>
+          <p>Every project is unique, but before construction begins, we'll provide a clear project timeline and keep you informed throughout the remodeling process.</p>
+        </div>
+        <div class="faq-box">
+          <h4>Do I need to be home during construction?</h4>
+          <p>Not necessarily. Many homeowners continue with their normal routines while we complete their remodel, and we communicate regularly so you're always informed.</p>
+        </div>
+        <div class="faq-box">
+          <h4>Can I personalize my bathroom design?</h4>
+          <p>Absolutely. Every collection is designed to provide a professionally coordinated foundation while allowing you to personalize select finishes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 13: WELCOME HOME -->
+    <div class="page page-13">
+      <img src="assets/images/welcome_home.jpg" alt="Welcome Home Finished Sanctuary" class="p13-img">
+      <div class="p13-overlay">
+        <h2>Where Every Day Begins a Little Better</h2>
+        <p>Welcome Home.</p>
+      </div>
+    </div>
+
+    <!-- PAGE 14: BACK COVER -->
+    <div class="page page-14">
+      <div>
+        <span class="page-tag">DM Home Improvement</span>
+        <h2 style="font-family:var(--font-headline); font-size:2rem; color:var(--navy); margin-top:8px;">Let's Create Something Beautiful Together</h2>
+      </div>
+
+      <img src="assets/images/logo.png" alt="DM Home Improvement Shield Logo" class="p14-center-logo">
+
+      <div class="p14-contact-box">
+        <div class="p14-info">
+          <h4>Danielle & Derek Myers</h4>
+          <p>Design Curator & Master Craftsman</p>
+          <p><strong>Phone:</strong> (555) 839-2041 | <strong>Email:</strong> danielle@dmhomeimprovement.com</p>
+          <p><strong>Website:</strong> www.dmhomeimprovement.com</p>
+        </div>
+        <div class="p14-qr-box">
+          <svg class="p14-qr-img" viewBox="0 0 100 100" fill="#FFFFFF">
+            <rect width="100" height="100" fill="#001A33"/>
+            <rect x="10" y="10" width="30" height="30" fill="#C5A059"/>
+            <rect x="60" y="10" width="30" height="30" fill="#C5A059"/>
+            <rect x="10" y="60" width="30" height="30" fill="#C5A059"/>
+            <rect x="20" y="20" width="10" height="10" fill="#001A33"/>
+            <rect x="70" y="20" width="10" height="10" fill="#001A33"/>
+            <rect x="20" y="70" width="10" height="10" fill="#001A33"/>
+            <rect x="50" y="50" width="15" height="15" fill="#C5A059"/>
+            <rect x="70" y="70" width="20" height="20" fill="#C5A059"/>
+          </svg>
+          <p style="font-size:0.7rem; color:#64748B; margin-top:4px;">Scan to view online portfolio</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
