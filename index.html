@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bathroom Design Portfolio | DM Home Improvement</title>
+  <meta name="description" content="Explore curated bathroom collections professionally designed by DM Home Improvement. Discover Bronze, Silver, and Gold curated collections with the DM Turnkey White Glove Experience.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span>The DM Turnkey White Glove Experience™ — Professionally Designed. Expertly Crafted. Beautifully Yours.</span>
+      <span class="top-bar-contact">Design Curator: <strong>Danielle Felice</strong></span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="main-nav">
+    <div class="container nav-container">
+      <a href="#welcome" class="brand-logo">
+        <span class="logo-sub">DM HOME IMPROVEMENT</span>
+        <span class="logo-main">Bathroom Portfolio</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#welcome" class="nav-link active">Welcome</a>
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#personalize" class="nav-link">Personalize</a>
+        <a href="#white-glove" class="nav-link">White Glove Experience</a>
+        <a href="#process" class="nav-link">What to Expect</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="btn btn-gold nav-btn">Schedule Consultation</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu" id="mobile-toggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Welcome Section -->
+  <section class="hero-section" id="welcome">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Curated Bathroom Collections</div>
+      <h1 class="hero-title">Designing Your Dream Bathroom Starts Here</h1>
+      <p class="hero-subtitle">
+        A bathroom remodel is more than selecting fixtures, tile, or paint colors. It's an opportunity to create a space that reflects your style, supports your lifestyle, and brings lasting comfort to your home.
+      </p>
+
+      <div class="hero-features-grid">
+        <div class="hero-feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Curated Perfection</h3>
+          <p>Eliminate endless product choices with professionally coordinated complete bathroom environments.</p>
+        </div>
+        <div class="hero-feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3>Turnkey White Glove</h3>
+          <p>From initial consultation to final walkthrough, our team manages every detail with complete care.</p>
+        </div>
+        <div class="hero-feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Tailored For You</h3>
+          <p>Personalize finishes and materials under the expert guidance of Design Curator Danielle Felice.</p>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#collections" class="btn btn-primary btn-lg">Explore Curated Collections</a>
+        <a href="#personalize" class="btn btn-outline btn-lg">Try Live Customizer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curated Collections Section -->
+  <section class="section collections-section" id="collections">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">Curated Design Portfolios</span>
+        <h2 class="section-title">Explore Our Curated Collections</h2>
+        <p class="section-description">
+          Each collection combines timeless design, premium materials, and coordinated craftsmanship to eliminate the guesswork of bathroom remodeling.
+        </p>
+      </div>
+
+      <!-- Tier Selection Tabs -->
+      <div class="tier-tabs-wrapper">
+        <div class="tier-tabs">
+          <button class="tier-tab active" data-tier="bronze">
+            <span class="tier-name">Bronze Collection</span>
+            <span class="tier-tagline">Simple. Beautiful. Designed to Last.</span>
+          </button>
+          <button class="tier-tab" data-tier="silver">
+            <span class="tier-name">Silver Collection</span>
+            <span class="tier-tagline">Custom. Refined. Timeless.</span>
+          </button>
+          <button class="tier-tab" data-tier="gold">
+            <span class="tier-name">Gold Collection</span>
+            <span class="tier-tagline">Luxury Without Compromise.</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Design Selector Sub-Tabs -->
+      <div class="design-selector-bar" id="design-selector-bar">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Main Showcase Container -->
+      <div class="showcase-card">
+        <div class="showcase-grid">
+          <!-- Interactive Rendering Viewport (65-70% width on large screen) -->
+          <div class="rendering-viewport">
+            <div class="viewport-header">
+              <span class="badge badge-collection" id="showcase-badge">BRONZE COLLECTION</span>
+              <h3 class="showcase-design-name" id="showcase-name">The Ashford</h3>
+              <p class="showcase-design-tag" id="showcase-tag">Clean. Comfortable. Timeless.</p>
+            </div>
+            
+            <div class="image-wrapper" id="image-wrapper">
+              <img id="showcase-image" src="assets/images/ashford.jpg" alt="The Ashford Bathroom Rendering" loading="eager">
+              
+              <!-- Hotspots dynamically overlayed on image -->
+              <div class="hotspots-layer" id="hotspots-layer">
+                <!-- Pins placed via JS -->
+              </div>
+            </div>
+
+            <div class="viewport-hint">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              <span>Click or hover on interactive pins 📍 to inspect curated finishes</span>
+            </div>
+          </div>
+
+          <!-- Design Story & Included Collections Table -->
+          <div class="design-details-panel">
+            <div class="panel-header">
+              <h4>Design Philosophy</h4>
+              <p class="design-story-text" id="showcase-story">
+                The Ashford blends warm neutrals, clean lines, and thoughtfully coordinated finishes to create a bathroom that feels bright, welcoming, and effortlessly timeless. Designed for everyday living, it offers a refined look that complements a wide variety of homes.
+              </p>
+            </div>
+
+            <div class="curated-includes-box">
+              <h5 class="box-title">Curated Design Includes</h5>
+              <ul class="includes-list" id="includes-list">
+                <li>Coordinated vanity & countertop</li>
+                <li>Luxury vinyl plank flooring</li>
+                <li>Tub and shower surround</li>
+                <li>Coordinated plumbing fixtures</li>
+                <li>Mirror and lighting collection</li>
+                <li>Hardware and accessories</li>
+                <li>Professionally selected finishes throughout</li>
+              </ul>
+            </div>
+
+            <div class="curated-specs-table-wrapper">
+              <h5 class="box-title">Featured Product Collections</h5>
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Curated Element</th>
+                    <th>Specification Details</th>
+                  </tr>
+                </thead>
+                <tbody id="specs-table-body">
+                  <!-- Filled via JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <div class="panel-action">
+              <button class="btn btn-gold btn-block" id="btn-personalize-this">
+                Personalize The Ashford Design
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Personalization Engine -->
+  <section class="section personalize-section" id="personalize">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">Tailored To Your Vision</span>
+        <h2 class="section-title">Designed Around You</h2>
+        <p class="section-description">
+          After selecting your base collection, Design Curator Danielle Felice will guide you through available finish choices—enabling you to make the space uniquely yours while preserving the balance of the curated design.
+        </p>
+      </div>
+
+      <div class="personalize-flow-steps">
+        <div class="flow-step">
+          <div class="step-num">1</div>
+          <div class="step-text">Choose Base Collection</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="step-num">2</div>
+          <div class="step-text">Personalize Finishes</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="step-num">3</div>
+          <div class="step-text">Enjoy Your Dream Bathroom</div>
+        </div>
+      </div>
+
+      <div class="customizer-container">
+        <!-- Live Customization Controls -->
+        <div class="customizer-controls">
+          <h3 class="customizer-title">Live Material & Finish Studio</h3>
+          
+          <div class="control-group">
+            <label class="control-label">Base Collection Model</label>
+            <select id="custom-base-select" class="form-select">
+              <option value="ashford">The Ashford (Bronze)</option>
+              <option value="brighton">The Brighton (Bronze)</option>
+              <option value="somerset">The Somerset (Bronze)</option>
+              <option value="riviera">The Riviera (Gold Spa)</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Cabinetry Finish</label>
+            <div class="swatch-picker" id="cabinet-swatches">
+              <button class="swatch-btn active" data-option="White" style="background:#F8F9FA;" title="Pure White"></button>
+              <button class="swatch-btn" data-option="Warm Oak" style="background:#C49A6C;" title="Warm Oak"></button>
+              <button class="swatch-btn" data-option="Navy Blue" style="background:#1B2A4A;" title="Classic Navy"></button>
+              <button class="swatch-btn" data-option="Soft Charcoal" style="background:#3C4043;" title="Soft Charcoal"></button>
+              <button class="swatch-btn" data-option="Warm Greige" style="background:#B3A89B;" title="Warm Greige"></button>
+            </div>
+            <span class="selected-value-label" id="cabinet-val">Pure White</span>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Plumbing Fixtures & Hardware</label>
+            <div class="swatch-picker" id="hardware-swatches">
+              <button class="swatch-btn active" data-option="Brushed Nickel" style="background:#A8A8A8;" title="Brushed Nickel"></button>
+              <button class="swatch-btn" data-option="Matte Black" style="background:#1A1A1A;" title="Matte Black"></button>
+              <button class="swatch-btn" data-option="Polished Chrome" style="background:#E2E8F0;" title="Polished Chrome"></button>
+              <button class="swatch-btn" data-option="Champagne Brass" style="background:#D4AF37;" title="Champagne Brass"></button>
+            </div>
+            <span class="selected-value-label" id="hardware-val">Brushed Nickel</span>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Flooring & Tile Accent</label>
+            <div class="swatch-picker" id="flooring-swatches">
+              <button class="swatch-btn active" data-option="Marble-Look LVP" style="background:linear-gradient(135deg,#eaeaea,#c9c9c9);" title="Marble LVP"></button>
+              <button class="swatch-btn" data-option="Natural Oak LVP" style="background:#b88d57;" title="Oak LVP"></button>
+              <button class="swatch-btn" data-option="Hexagonal Carrara" style="background:radial-gradient(circle,#ffffff,#dcdcdc);" title="Hex Marble"></button>
+              <button class="swatch-btn" data-option="Slate Grey Stone" style="background:#4a5568;" title="Slate Stone"></button>
+            </div>
+            <span class="selected-value-label" id="flooring-val">Marble-Look LVP</span>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Wall Paint Shade</label>
+            <div class="swatch-picker" id="paint-swatches">
+              <button class="swatch-btn active" data-option="Soft Greige" style="background:#DCD7D0;" title="Soft Greige"></button>
+              <button class="swatch-btn" data-option="Alabaster White" style="background:#F7F5F0;" title="Alabaster"></button>
+              <button class="swatch-btn" data-option="Sea Salt Mist" style="background:#C6D4CE;" title="Sea Salt"></button>
+              <button class="swatch-btn" data-option="Warm Linen" style="background:#EAE3D2;" title="Warm Linen"></button>
+            </div>
+            <span class="selected-value-label" id="paint-val">Soft Greige</span>
+          </div>
+        </div>
+
+        <!-- Visual Preview & Dynamic Summary -->
+        <div class="customizer-preview">
+          <div class="preview-image-card">
+            <img id="custom-preview-img" src="assets/images/swatches.jpg" alt="Curated Material Swatches Collage">
+            <div class="custom-overlay-tag">Live Personalized Configuration</div>
+          </div>
+
+          <div class="custom-summary-card">
+            <h4>Your Tailored Specification Sheet</h4>
+            <div class="summary-specs">
+              <div class="spec-row"><span>Base Model:</span> <strong id="sum-base">The Ashford</strong></div>
+              <div class="spec-row"><span>Cabinetry:</span> <strong id="sum-cabinet">Pure White</strong></div>
+              <div class="spec-row"><span>Hardware & Fixtures:</span> <strong id="sum-hardware">Brushed Nickel</strong></div>
+              <div class="spec-row"><span>Flooring:</span> <strong id="sum-flooring">Marble-Look LVP</strong></div>
+              <div class="spec-row"><span>Wall Color:</span> <strong id="sum-paint">Soft Greige</strong></div>
+            </div>
+            <button class="btn btn-primary btn-block" id="btn-save-config">
+              Apply Configuration To Consultation Form
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The DM Turnkey White Glove Experience Section -->
+  <section class="section white-glove-section" id="white-glove">
+    <div class="container">
+      <div class="white-glove-wrapper">
+        <div class="white-glove-text">
+          <span class="section-tagline">The DM Distinction</span>
+          <h2 class="section-title">The DM Turnkey White Glove Experience™</h2>
+          <p class="lead-text">
+            Remodeling Should Feel Exciting — Not Overwhelming.
+          </p>
+          <p>
+            At DM Home Improvement, we've built our process around one simple promise: <em>You enjoy the transformation. We handle everything else.</em> From initial consultation through final walkthrough, our team manages every detail with professionalism, communication, and care.
+          </p>
+
+          <div class="white-glove-grid">
+            <div class="wg-card">
+              <div class="wg-num">01</div>
+              <h4>Professional Project Management</h4>
+              <p>Your remodel is carefully planned, coordinated, and managed from beginning to end by experienced specialists.</p>
+            </div>
+            <div class="wg-card">
+              <div class="wg-num">02</div>
+              <h4>Respect for Your Home</h4>
+              <p>We treat your home as our own—protecting surrounding spaces, maintaining clean work areas, and minimizing disruption.</p>
+            </div>
+            <div class="wg-card">
+              <div class="wg-num">03</div>
+              <h4>Clear Communication</h4>
+              <p>You'll always know what to expect. We keep you informed throughout the project and are always available for questions.</p>
+            </div>
+            <div class="wg-card">
+              <div class="wg-num">04</div>
+              <h4>Exceptional Craftsmanship</h4>
+              <p>Every tile cut, fixture mounting, and finish seal is executed with meticulous craftsmanship and quality pride.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="white-glove-visual">
+          <div class="image-frame">
+            <img src="assets/images/craftsman.jpg" alt="Master craftsman precision tile installation">
+            <div class="frame-caption">
+              <span>Master Tile Installation & Floor Protection</span>
+              <small>Dedicated site care on every DM Turnkey project</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect / Process Timeline Section -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">Simple 5-Step Journey</span>
+        <h2 class="section-title">A Clear Process. A Beautiful Result.</h2>
+        <p class="section-description">
+          You're Never Left Wondering What's Next. Our commitment to clear communication means you always know where your project stands.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-step">
+          <div class="timeline-badge">01</div>
+          <div class="timeline-content">
+            <h3>DISCOVER</h3>
+            <p>We begin by learning about your home, your goals, and your vision. Together, we'll explore our curated bathroom collections and help you find the design that best fits your style.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-badge">02</div>
+          <div class="timeline-content">
+            <h3>PERSONALIZE</h3>
+            <p>Once you've selected your collection, Design Curator Danielle will guide you through available personalization options, allowing you to tailor key finishes seamlessly.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-badge">03</div>
+          <div class="timeline-content">
+            <h3>PREPARE</h3>
+            <p>Before construction begins, we finalize selections, confirm project timelines, order materials, and carefully prepare for installation so work starts smoothly.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-badge">04</div>
+          <div class="timeline-content">
+            <h3>BUILD</h3>
+            <p>Our experienced craftsmen bring your new bathroom to life with precision, professionalism, and respect for your home in a clean, organized work environment.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-badge">05</div>
+          <div class="timeline-content">
+            <h3>ENJOY</h3>
+            <p>When your remodel is complete, we'll walk through your new bathroom together to ensure every detail meets our standards—and yours. Then it's time to enjoy!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">Peace of Mind</span>
+        <h2 class="section-title">Answers to Common Questions</h2>
+        <p class="section-description">
+          Choosing the right remodeling company is an important decision. Here are clear answers to the questions we hear most often.
+        </p>
+      </div>
+
+      <div class="faq-accordion" id="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long will my bathroom remodel take?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Every project is unique, but before construction begins, we'll provide a clear project timeline and keep you informed throughout the entire remodeling process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Will my home become a construction zone?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We understand that we're guests in your home. Our team takes great care to protect surrounding areas, maintain an organized workspace, and clean up throughout the project daily.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need to be home during construction?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Not necessarily. Many homeowners continue with their normal daily routines while we complete their remodel, and we communicate regularly so you always know progress.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I personalize my bathroom design?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Every collection is designed to provide a professionally coordinated foundation while allowing you to personalize select finishes with Danielle's guidance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Why choose curated collections instead of selecting everything individually?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Curated collections remove the stress of coordinating dozens of individual products while still allowing room for personalization, resulting in a bathroom that feels cohesive, timeless, and expertly crafted.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Consultation Form Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-tagline" style="color:#D4AF37;">Let's Create Something Beautiful Together</span>
+            <h2 class="contact-title">Schedule Your Design Consultation</h2>
+            <p>
+              Whether you're ready to begin your project today or simply gathering ideas for the future, we'd be honored to help bring your vision to life.
+            </p>
+
+            <div class="curator-card">
+              <div class="curator-details">
+                <span class="curator-role">Design Curator</span>
+                <h4 class="curator-name">Danielle Felice</h4>
+                <p>DM Home Improvement Design Studio</p>
+                <div class="curator-contacts">
+                  <div class="c-item">📞 (555) 839-2041</div>
+                  <div class="c-item">✉️ danielle@dmhomeimprovement.com</div>
+                  <div class="c-item">🌐 www.dmhomeimprovement.com</div>
+                </div>
+              </div>
+            </div>
+
+            <blockquote class="curator-quote">
+              "Questions are always welcome. We believe confidence begins with clear communication."
+            </blockquote>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form id="consultation-form" class="consultation-form">
+              <h3>Start Your Remodel Journey</h3>
+              
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" required placeholder="Jane Doe">
+              </div>
+
+              <div class="form-group">
+                <label for="email-addr">Email Address</label>
+                <input type="email" id="email-addr" required placeholder="jane@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone-num">Phone Number</label>
+                <input type="tel" id="phone-num" required placeholder="(555) 000-0000">
+              </div>
+
+              <div class="form-group">
+                <label for="pref-collection">Preferred Collection</label>
+                <select id="pref-collection">
+                  <option value="Bronze - The Ashford">Bronze Collection — The Ashford</option>
+                  <option value="Bronze - The Brighton">Bronze Collection — The Brighton</option>
+                  <option value="Bronze - The Somerset">Bronze Collection — The Somerset</option>
+                  <option value="Silver - The Sterling">Silver Collection — Custom Refined</option>
+                  <option value="Gold - The Riviera">Gold Collection — Luxury Spa Suite</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="notes">Project Vision & Timeline Notes</label>
+                <textarea id="notes" rows="3" placeholder="Tell us about your space, preferred timing, or key priorities..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-block btn-lg">Submit Consultation Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary Modal -->
+  <dialog id="summary-modal" class="custom-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-header">
+        <span class="modal-badge">DM Home Improvement</span>
+        <h3>Your Personalized Bathroom Remodel Specification</h3>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Rendered by JS -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="window.print()">Print Specification Card</button>
+        <button class="btn btn-outline" id="modal-done-btn">Close Window</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo-block">
+          <img src="assets/images/logo.png" alt="DM Home Improvement Shield Logo" class="footer-logo-img">
+          <div class="footer-brand-text">
+            <h3>DM HOME IMPROVEMENT</h3>
+            <p class="footer-tagline">Professionally Designed. Expertly Crafted. Beautifully Yours.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 DM Home Improvement. All rights reserved. The DM Turnkey White Glove Experience™ is a registered trademark.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
