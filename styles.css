@@ -1291,3 +1291,143 @@ p {
   white-space: nowrap !important;
   line-height: 1.1 !important;
 }
+
+
+/* ========================================================= */
+/* COMPREHENSIVE MOBILE OPTIMIZATIONS (RESPONSIVE FIXES)     */
+/* ========================================================= */
+
+/* Curator Section Layout */
+.curator-flex-layout {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  grid-template-areas: 
+    "image header"
+    "image body";
+  gap: 20px 40px;
+  align-items: start;
+}
+
+.curator-header-box { grid-area: header; }
+.curator-img-box { grid-area: image; }
+.curator-body-box { grid-area: body; }
+
+.curator-portrait-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--accent-gold);
+  display: block;
+}
+
+/* MOBILE SCREEN OVERRIDES (max-width: 768px) */
+@media (max-width: 768px) {
+  
+  /* 1st Screenshot Fix: Full-width Showcase Render Viewport (No side black bars) */
+  .rendering-viewport {
+    padding: 20px 0 !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    background: #0D1117 !important;
+  }
+
+  .showcase-card {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .rendering-viewport .viewport-header {
+    padding: 0 16px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .rendering-viewport .viewport-hint {
+    padding: 0 16px !important;
+    margin-top: 12px !important;
+  }
+
+  .image-wrapper {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .image-wrapper img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 480px !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+    display: block !important;
+  }
+
+  /* 2nd Screenshot Fix: Curator Section Mobile Layout */
+  /* Reposition image to 1 full row between end quote "Remodeling..." and body copy */
+  .curator-flex-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .curator-header-box { order: 1 !important; }
+  .curator-img-box {
+    order: 2 !important;
+    width: 100% !important;
+    margin: 8px 0 16px 0 !important;
+  }
+  .curator-body-box { order: 3 !important; }
+
+  .curator-portrait-img {
+    width: 100% !important;
+    height: 380px !important;
+    object-fit: cover !important;
+    object-position: center 15% !important;
+    border-radius: 12px !important;
+  }
+
+  /* 3rd Screenshot Fix: Silver Highlight Ribbon Overshooting Button Fix */
+  .silver-highlight-banner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+    padding: 20px 16px !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .silver-highlight-banner div {
+    width: 100% !important;
+  }
+
+  .silver-highlight-banner button {
+    width: 100% !important;
+    margin-left: 0 !important;
+    display: block !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  /* General Mobile Container & Section Padding */
+  .container {
+    padding: 0 16px !important;
+  }
+
+  .section {
+    padding: 48px 0 !important;
+  }
+
+  .hero-section {
+    padding: 32px 0 !important;
+  }
+
+  .curator-hero-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .curator-hero-card > div:first-child {
+    padding: 24px 16px !important;
+  }
+}
