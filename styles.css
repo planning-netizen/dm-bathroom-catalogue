@@ -1431,3 +1431,28 @@ p {
     padding: 24px 16px !important;
   }
 }
+
+
+/* Footer Mobile Optimization (Fix Overshooting & Squished Text) */
+@media (max-width: 768px) {
+  footer div.container > div:first-child {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  
+  footer h4 {
+    margin-bottom: 10px !important;
+    font-size: 0.9rem !important;
+  }
+
+  footer p, footer li {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+  }
+
+  footer div.container > div:last-child {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 12px !important;
+  }
+}
