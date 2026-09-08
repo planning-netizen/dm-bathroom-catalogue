@@ -1,502 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bathroom Design Catalogue | DM Home Improvement</title>
-  <meta name="description" content="Explore curated bathroom collections professionally designed by DM Home Improvement. Discover Bronze, Silver Signature, and Gold Spa collections with the DM Turnkey White Glove Experience.">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Custom brand enhancements matching print_v2.html */
-    .brand-logo img.nav-logo-img {
-      height: 54px;
-      width: auto;
-      object-fit: contain;
-      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
-    }
-    .curator-hero-card {
-      background: #FFFFFF;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
-      border: 1px solid var(--border-color);
-      display: grid;
-      grid-template-columns: 48% 52%;
-      align-items: center;
-    }
-    @media (max-width: 992px) {
-      .curator-hero-card {
-        grid-template-columns: 1fr;
-      }
-    }
-    .trade-standards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .trade-card {
-      background: #FFFFFF;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--border-color);
-      border-left: 4px solid var(--accent-gold);
-    }
-    .trade-card h4 {
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--primary-dark);
-      margin-bottom: 6px;
-      letter-spacing: 0.08em;
-    }
-    /* Founder's Silver Highlight Ribbon */
-    .silver-highlight-banner {
-      background: linear-gradient(135deg, #001A33 0%, #00284D 100%);
-      border: 2px solid var(--accent-gold);
-      border-radius: 12px;
-      padding: 16px 24px;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: #FFFFFF;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    }
-    .tier-tab.silver-pick {
-      position: relative;
-      border: 2px solid var(--accent-gold) !important;
-      background: #FFFFFF !important;
-      box-shadow: 0 6px 20px rgba(197, 160, 89, 0.25) !important;
-    }
-    .tier-tab.silver-pick::after {
-      content: '★ FOUNDER'S CHOICE — MOST POPULAR';
-      position: absolute;
-      top: -12px;
-      background: var(--accent-gold);
-      color: var(--primary-dark);
-      font-size: 0.65rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      padding: 2px 10px;
-      border-radius: 10px;
-      text-transform: uppercase;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Home Improvement | Master Bathroom Design Catalogue</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-content">
-      <span>The DM Turnkey White Glove Experience™ — Professionally Designed. Expertly Crafted. Beautifully Yours.</span>
-      <span class="top-bar-contact">Design Curator: <strong>Danielle Felice</strong></span>
-    </div>
-  </div>
+    <!-- NAVIGATION HEADER -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#welcome" class="nav-logo">
+                <span class="logo-main">DM HOME IMPROVEMENT</span>
+                <span class="logo-sub">Bathroom Catalogue</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#welcome">Welcome</a>
+                <a href="#curator">Design Curator</a>
+                <a href="#collections">Curated Collections</a>
+                <a href="#gold-teaser">Go Gold</a>
+                <a href="#personalization">Add A Touch Of You</a>
+                <a href="#process">Our Process</a>
+                <a href="#contact">Contact Us</a>
+                <a href="print_v2.html" target="_blank" class="nav-btn-print">📄 Print Catalogue (v2)</a>
+            </nav>
 
-  <!-- Navigation -->
-  <header class="navbar" id="main-nav">
-    <div class="container nav-container">
-      <a href="#welcome" class="brand-logo">
-        <img src="assets/images/logo.png" alt="DM Home Improvement Shield Logo" class="nav-logo-img">
-        <div class="brand-logo-text">
-          <span class="logo-sub">DM HOME IMPROVEMENT</span>
-          <span class="logo-main">Bathroom Catalogue</span>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </a>
-      <nav class="nav-links">
-        <a href="#welcome" class="nav-link active">Welcome</a>
-        <a href="#curator" class="nav-link">Design Curator</a>
-        <a href="#collections" class="nav-link">Collections</a>
-        <a href="#gold-spa" class="nav-link" style="color:var(--accent-gold); font-weight:700;">✨ Gold Spa</a>
-        <a href="#standards" class="nav-link">Trade Standards</a>
-        <a href="#process" class="nav-link">5-Step Process</a>
-        <a href="print_v2.html" target="_blank" class="nav-link" style="color:var(--accent-gold); font-weight:700; border:1px solid var(--accent-gold); padding:5px 12px; border-radius:4px; white-space:nowrap;">📄 Print Catalogue (v2)</a>
-        <a href="#contact" class="btn btn-gold nav-btn" style="padding:8px 16px; font-size:0.82rem; white-space:nowrap;">Schedule Consultation</a>
-      </nav>
-      <button class="mobile-toggle" aria-label="Toggle menu" id="mobile-toggle">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-      </button>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero Welcome Section (Matching Page 2 Editorial Layout) -->
-  <section class="hero-section" id="welcome" style="padding:60px 0; background:var(--bg-light);">
-    <div class="container">
-      <div class="curator-hero-card">
-        <div style="padding:40px;">
-          <span class="page-tag" style="font-size:0.75rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent-gold); font-weight:700; display:block; margin-bottom:8px;">WELCOME</span>
-          <h1 style="font-family:'Playfair Display', serif; font-size:2.4rem; color:var(--primary-dark); line-height:1.2; margin-bottom:16px;">Designing Your Dream Bathroom Starts Here</h1>
-          <p style="font-size:0.95rem; color:#475569; line-height:1.6; margin-bottom:16px;">
-            A bathroom remodel is more than selecting fixtures, tile, or paint colors. It's an opportunity to create a space that reflects your style, supports your lifestyle, and brings lasting comfort to your home.
-          </p>
-          <p style="font-size:0.95rem; color:#475569; line-height:1.6; margin-bottom:20px;">
-            At DM Home Improvement, we've reimagined the remodeling experience by making beautiful design simple. Instead of asking you to sort through hundreds of products, we've created professionally curated bathroom environments carefully designed to work beautifully together.
-          </p>
-          <div style="border-left:3px solid var(--accent-gold); padding-left:14px; margin-bottom:24px;">
-            <p style="font-family:'Playfair Display', serif; font-style:italic; font-size:1.1rem; color:var(--primary-dark);">“Welcome to a better remodeling experience.” — Danielle & Derek Myers</p>
-          </div>
-          <div style="display:flex; gap:14px; flex-wrap:wrap;">
-            <a href="#collections" class="btn btn-gold btn-lg">Explore Silver & Curated Collections</a>
-            <a href="print_v2.html" target="_blank" class="btn btn-outline btn-lg">View Print Catalogue</a>
-          </div>
-        </div>
-        <div style="height:100%; min-height:420px; overflow:hidden;">
-          <img src="assets/images/danielle_consultation.jpg" alt="Design Curator Danielle Felice conducting a luxury bathroom design consultation" style="width:100%; height:100%; object-fit:cover; display:block;">
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- MAIN CONTENT -->
+    <main>
 
-  <!-- Meet Your Design Curator Section (Mobile & Desktop Optimized) -->
-  <section class="section" id="curator" style="background:#FFFFFF; border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);">
-    <div class="container">
-      <div class="curator-flex-layout">
-        
-        <!-- Header Text -->
-        <div class="curator-header-box">
-          <span class="section-tagline" style="color:var(--accent-gold); font-size:0.8rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:4px;">Meet Your Design Curator</span>
-          <h2 style="font-family:'Playfair Display', serif; font-size:2.4rem; color:var(--primary-dark); margin-bottom:4px;">Danielle Felice</h2>
-          <p class="curator-subtitle-quote" style="font-family:'Playfair Display', serif; font-style:italic; font-size:1.2rem; color:var(--primary-dark); margin-bottom:16px;">"Remodeling Should Feel Exciting — Not Overwhelming."</p>
-        </div>
+        <!-- WELCOME HERO SECTION -->
+        <section id="welcome" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="brand-tag">THE DM TURNKEY WHITE GLOVE EXPERIENCE™</div>
+                    <h1 class="hero-title">Your Space.<br><span class="highlight-gold">Reimagined Around You.</span></h1>
+                    <p class="hero-tagline">REFRESH. REFOCUS. REIMAGINE.</p>
+                    <p class="hero-subtitle">
+                        "Whatever brought you here, your remodel starts with how you want your home to look, function, and feel."
+                    </p>
+                    
+                    <div class="hero-pillars">
+                        <div class="pillar-card">
+                            <h3>Refresh</h3>
+                            <p>A fresh, vibrant update that breathes new energy into your home's most essential space.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h3>Refocus</h3>
+                            <p>Making layout, storage, and lighting work effortlessly for your everyday routines.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h3>Reimagine</h3>
+                            <p>Elevating your vision to discover what your bathroom can become with curated design.</p>
+                        </div>
+                    </div>
 
-        <!-- Danielle Portrait (On Mobile: Takes 1 Full Row between Quote and Body Paragraphs) -->
-        <div class="curator-img-box">
-          <img src="assets/images/danielle.png" alt="Danielle Felice - Design Curator" class="curator-portrait-img">
-        </div>
+                    <div class="hero-actions">
+                        <a href="#collections" class="btn btn-primary">Explore Collections</a>
+                        <a href="print_v2.html" target="_blank" class="btn btn-secondary">View 17-Page Print Catalogue</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <img src="assets/images/welcome_home_1785453330678.jpg" alt="Luxury Bathroom Suite Rendering" class="hero-img">
+                </div>
+            </div>
+        </section>
 
-        <!-- Body Copy & Quote Box -->
-        <div class="curator-body-box">
-          <p style="font-size:0.95rem; color:#475569; line-height:1.6; margin-bottom:16px;">
-            A bathroom remodel comes with hundreds of possible choices. The goal isn't to show you all of them—it's to help you find the right ones.
-          </p>
-          <p style="font-size:0.95rem; color:#475569; line-height:1.6; margin-bottom:16px;">
-            As Design Curator for DM Home Improvement, Danielle Felice helps shape our collections by bringing together colors, finishes, textures, and products that complement one another—creating complete bathroom designs that feel intentional from the very beginning.
-          </p>
-          <p style="font-size:0.95rem; color:#475569; line-height:1.6; margin-bottom:16px;">
-            Every collection is built around a simple idea: <strong>Give you enough choice to make it yours, without making you design it yourself.</strong>
-          </p>
-          <div style="background:#FAF7F0; border-left:4px solid var(--accent-gold); padding:16px 20px; border-radius:6px; margin-top:20px;">
-            <p style="font-family:'Playfair Display', serif; font-size:1.05rem; font-style:italic; color:var(--primary-dark);">“Your bathroom should feel like you—without the stress of sorting through endless options. We've already done the searching, comparing, and coordinating. Your job is simply to find the design you love.”</p>
-          </div>
-        </div>
+        <!-- WHITE GLOVE CALLOUT -->
+        <section class="white-glove-callout-section">
+            <div class="container">
+                <div class="white-glove-box">
+                    <div class="wg-badge">YOUR BATHROOM. YOUR FOOTPRINT. YOUR PACKAGE.</div>
+                    <h2>"We've already done that work for you."</h2>
+                    <p class="wg-desc">
+                        Every major finish, surface, fixture, and color relationship is thoughtfully coordinated under the direction of <strong>Danielle Felice</strong>, Design Curator for DM Home Improvement, to create a complete and intentional look.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-      </div>
-    </div>
-  </section>
+        <!-- MEET YOUR DESIGN CURATOR -->
+        <section id="curator" class="curator-section">
+            <div class="container curator-container">
+                <div class="curator-image-col">
+                    <img src="assets/images/danielle_consultation.jpg" alt="Danielle Felice - Design Curator" class="curator-portrait">
+                </div>
+                
+                <div class="curator-text-col">
+                    <div class="section-tag">MEET YOUR DESIGN CURATOR</div>
+                    <h2 class="curator-name">Danielle Felice</h2>
+                    <p class="curator-role">Design Curator | DM Home Improvement</p>
 
-  <!-- Curated Collections Showcase Section (Silver Default & Sub-Tabs Active) -->
-  <section class="section collections-section" id="collections">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tagline">Curated Design Catalogues</span>
-        <h2 class="section-title">Explore Our Curated Collections</h2>
-        <p class="section-description">
-          Select a tier to inspect design looks (Timeless, Modern, Classic). Discover why <strong>Silver Signature</strong> is our #1 Founder's Choice go-to package.
-        </p>
-      </div>
+                    <blockquote class="curator-quote">
+                        "Give you enough choice to make it yours, without making you design it yourself."
+                    </blockquote>
 
-      <!-- Founder's Silver Recommendation Ribbon -->
-      <div class="silver-highlight-banner">
-        <div>
-          <strong style="color:var(--accent-gold); font-size:0.9rem; text-transform:uppercase; letter-spacing:0.1em; display:block; margin-bottom:2px;">🏆 Founder's Recommendation — The Go-To Package</strong>
-          <span style="font-size:0.85rem; color:#E2E8F0;">Why Silver Signature is our most requested remodel: It delivers a custom 12x24 walk-in tile shower, upgraded Harlow fixtures, and 78" semi-frameless glass door—offering the ideal sweet spot of everyday luxury and value.</span>
-        </div>
-        <button class="btn btn-gold" onclick="document.querySelector('[data-tier=\'silver\']').click()" style="flex-shrink:0; margin-left:16px;">View Silver Packages</button>
-      </div>
+                    <p class="curator-bio">
+                        Designing a bathroom shouldn't feel overwhelming with hundreds of endless decisions. Danielle hand-selects every tile, vanity, faucet, and finish to ensure aesthetic harmony, durability, and functional perfection.
+                    </p>
 
-      <!-- Tier Selection Tabs -->
-      <div class="tier-tabs-wrapper">
-        <div class="tier-tabs">
-          <button class="tier-tab" data-tier="bronze">
-            <span class="tier-name">Bronze Collection</span>
-            <span class="tier-tagline">Simple. Beautiful. Complete.</span>
-          </button>
-          <button class="tier-tab active silver-pick" data-tier="silver">
-            <span class="tier-name" style="color:var(--accent-gold);">Silver Signature</span>
-            <span class="tier-tagline">Custom Tile Shower. Refined.</span>
-          </button>
-          <button class="tier-tab" data-tier="gold">
-            <span class="tier-name">Gold Collection</span>
-            <span class="tier-tagline">Luxury Spa Master Sanctuary.</span>
-          </button>
-        </div>
-      </div>
+                    <div class="curator-highlights">
+                        <div class="ch-item">
+                            <span class="ch-icon">🎨</span>
+                            <div>
+                                <h4>Harmonious Aesthetics</h4>
+                                <p>Every material palette is balanced for long-lasting visual elegance.</p>
+                            </div>
+                        </div>
+                        <div class="ch-item">
+                            <span class="ch-icon">✨</span>
+                            <div>
+                                <h4>Streamlined Selections</h4>
+                                <p>Curated packages eliminate decision fatigue and costly design trial-and-error.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <!-- Design Selector Sub-Tabs -->
-      <div class="design-selector-bar" id="design-selector-bar">
-        <!-- Rendered dynamically by JavaScript (Timeless, Modern, Classic) -->
-      </div>
+        <!-- CURATED COLLECTIONS SECTION -->
+        <section id="collections" class="collections-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">SECTION 2 | THE DM CURATED EXPERIENCE</div>
+                    <h2>Curated Collections Designed for Every Home</h2>
+                    <p class="section-lead">Choose the package tier that fits your vision, routine, and investment level.</p>
+                </div>
 
-      <!-- Main Showcase Container -->
-      <div class="showcase-card">
-        <div class="showcase-grid">
-          <!-- Interactive Rendering Viewport (70% width) -->
-          <div class="rendering-viewport">
-            <div class="viewport-header">
-              <span class="badge badge-collection" id="showcase-badge">SILVER SIGNATURE ★ FOUNDER'S GO-TO PICK</span>
-              <h3 class="showcase-design-name" id="showcase-name">The Timeless Signature</h3>
-              <p class="showcase-design-tag" id="showcase-tag">Polished. Refined. Enduring.</p>
+                <!-- TIER TABS -->
+                <div class="tier-tabs">
+                    <button class="tier-tab active" data-tier="bronze">GO BRONZE</button>
+                    <button class="tier-tab" data-tier="silver">GO SILVER SIGNATURE</button>
+                    <button class="tier-tab" data-tier="gold">GO GOLD (Teaser)</button>
+                </div>
+
+                <!-- TIER CONTENT: BRONZE -->
+                <div id="tier-bronze" class="tier-content active">
+                    <div class="tier-intro">
+                        <h3>GO BRONZE: Beautiful. Simple. Complete.</h3>
+                        <p class="tier-subtitle">Everything You Need. Nothing You Don't.</p>
+                        <p class="tier-desc">
+                            GO BRONZE is our foundational curated package—engineered for homeowners seeking a high-quality, full bathroom refresh without the complexity of custom tile work. Each design is complete with standard white tub surround, built-in shelving, coordinated glass enclosure, and vanity lighting.
+                        </p>
+                    </div>
+
+                    <div class="collection-cards-grid">
+                        <!-- TIMELESS BRONZE -->
+                        <div class="collection-card">
+                            <div class="card-img-wrap">
+                                <img src="assets/images/bronze_timeless_render.jpg" alt="The Timeless Bronze Rendering">
+                                <span class="card-badge">BRONZE COLLECTION</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>The Timeless</h3>
+                                <p class="card-curator-note">"Timeless is about creating elegance without making the room feel formal."</p>
+                                <ul class="card-specs">
+                                    <li><strong>Flooring:</strong> White marble-look LVP with soft gray veining</li>
+                                    <li><strong>Vanity:</strong> Sophisticated gray vanity with coordinating top</li>
+                                    <li><strong>Fixtures:</strong> Brushed nickel fixtures & hardware</li>
+                                    <li><strong>Surround:</strong> Standard white tub & surround with built-in shelving</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- MODERN BRONZE -->
+                        <div class="collection-card">
+                            <div class="card-img-wrap">
+                                <img src="assets/images/modern_bronze_render.jpg" alt="The Modern Bronze Rendering">
+                                <span class="card-badge">BRONZE COLLECTION</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>The Modern</h3>
+                                <p class="card-curator-note">"Modern uses contrast to make simple choices feel intentional."</p>
+                                <ul class="card-specs">
+                                    <li><strong>Flooring:</strong> Concrete-look gray waterproof LVP</li>
+                                    <li><strong>Vanity:</strong> Fresh white vanity with coordinating top</li>
+                                    <li><strong>Fixtures:</strong> Matte black fixtures & accessories</li>
+                                    <li><strong>Surround:</strong> Standard white tub & surround with built-in shelving</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- CLASSIC BRONZE -->
+                        <div class="collection-card">
+                            <div class="card-img-wrap">
+                                <img src="assets/images/bronze_classic_render.jpg" alt="The Classic Bronze Rendering">
+                                <span class="card-badge">BRONZE COLLECTION</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>The Classic</h3>
+                                <p class="card-curator-note">"Classic is for someone who wants personality without making the room complicated."</p>
+                                <ul class="card-specs">
+                                    <li><strong>Flooring:</strong> Warm natural wood-look waterproof LVP</li>
+                                    <li><strong>Vanity:</strong> Distinctive blue vanity with coordinating top</li>
+                                    <li><strong>Fixtures:</strong> Stainless-finish fixtures & accessories</li>
+                                    <li><strong>Surround:</strong> Standard white tub & surround with built-in shelving</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIER CONTENT: SILVER SIGNATURE -->
+                <div id="tier-silver" class="tier-content">
+                    <div class="tier-intro">
+                        <h3>GO SILVER SIGNATURE: More Than an Update. A Reward.</h3>
+                        <p class="tier-subtitle">Refined. Refreshing. Rewarding.</p>
+                        <p class="tier-desc">
+                            GO SILVER SIGNATURE elevates your space into a spa-like retreat. Featuring full-height custom 12x24 tile shower walls, matching tile flooring, furniture-grade vanity cabinetry, and frameless glass doors.
+                        </p>
+                    </div>
+
+                    <div class="collection-cards-grid">
+                        <!-- TIMELESS SILVER -->
+                        <div class="collection-card featured-card">
+                            <div class="card-img-wrap">
+                                <img src="assets/images/silver_timeless_render.jpg" alt="The Timeless Signature Rendering">
+                                <span class="card-badge gold-badge">LOCKED FEATURED DESIGN</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>The Timeless Signature</h3>
+                                <p class="card-curator-note">"Spa-inspired luxury tile with warm furniture-grade cabinetry."</p>
+                                <ul class="card-specs">
+                                    <li><strong>Shower Walls:</strong> Polished white marble-look 12x24 tile to ceiling</li>
+                                    <li><strong>Flooring:</strong> Matching 12x24 matte marble-look floor tile</li>
+                                    <li><strong>Vanity:</strong> Muse Grey furniture-style vanity with upgraded top</li>
+                                    <li><strong>Fixtures & Glass:</strong> Brushed nickel & clear frameless glass door</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- MODERN SILVER (TBD) -->
+                        <div class="collection-card reserved-card">
+                            <div class="reserved-img-placeholder">
+                                <span>RESERVED SPOTLIGHT</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>The Modern Signature</h3>
+                                <p class="card-curator-note" style="color:var(--gold-dark); font-weight:700;">SPECIFICATIONS TBD</p>
+                                <p style="font-size:0.9rem; color:#64748B; line-height:1.5;">
+                                    Currently in final material coordination under Danielle Felice's direction. Design specifications will be published once built.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CLASSIC SILVER (TBD) -->
+                        <div class="collection-card reserved-card">
+                            <div class="reserved-img-placeholder">
+                                <span>RESERVED SPOTLIGHT</span>
+                            </div>
+                            <div class="card-body">
+                                <h3>The Classic Signature</h3>
+                                <p class="card-curator-note" style="color:var(--gold-dark); font-weight:700;">SPECIFICATIONS TBD</p>
+                                <p style="font-size:0.9rem; color:#64748B; line-height:1.5;">
+                                    Currently in final material coordination under Danielle Felice's direction. Design specifications will be published once built.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIER CONTENT: GOLD (TEASER) -->
+                <div id="tier-gold" class="tier-content">
+                    <div id="gold-teaser" class="gold-under-construction-card">
+                        <div class="guc-icon">🏆</div>
+                        <h3>GO GOLD: We're Reimagining What's Possible.</h3>
+                        <p class="guc-badge">UNDER CONSTRUCTION — COMING SOON</p>
+                        <p class="guc-desc">
+                            Our flagship Gold Collection is being redesigned from a clean slate to deliver an extraordinary, uncompromised bathroom experience. Stay tuned as we reimagine luxury living.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONALIZATION SECTION -->
+        <section id="personalization" class="personalization-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">PERSONALIZATION | GUIDED SELECTION PROCESS</div>
+                    <h2>ADD A TOUCH OF YOU</h2>
+                    <p class="section-lead" style="max-width: 800px; margin: 0 auto;">
+                        We've designed the bathroom. Now make it feel like home. Every curated collection has been thoughtfully coordinated—from surfaces and cabinetry to fixtures and finishes. Choose the wall color featured in your selected design, or bring a little of your own personality into the room with another wall color that feels like home. Your bathroom. Your color. Your finishing touch.
+                    </p>
+                </div>
+
+                <div class="swatches-grid">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background:#FAF8F5; border:1px solid #CBD5E1;"></div>
+                        <h4>Alabaster White</h4>
+                        <p>Soft, warm, timeless neutral</p>
+                    </div>
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background:#E2E8F0; border:1px solid #CBD5E1;"></div>
+                        <h4>Coastal Greige</h4>
+                        <p>Calming, modern warm gray</p>
+                    </div>
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background:#CBD5E1; border:1px solid #94A3B8;"></div>
+                        <h4>Slate Fog</h4>
+                        <p>Sophisticated cool tone contrast</p>
+                    </div>
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background:#FEF08A; border:1px solid #FDE047;"></div>
+                        <h4>Champagne Gold</h4>
+                        <p>Warm accent wall glow</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-STEP PROCESS SECTION -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag" style="color:var(--gold);">THE DM DISTINCTION | 5-STEP PROCESS</div>
+                    <h2 style="color:#FFF;">A CLEAR PROCESS. A BEAUTIFUL RESULT.</h2>
+                    <p class="section-lead" style="color:var(--gold);">You Choose Your Bathroom. We Take It From There.</p>
+                </div>
+
+                <div class="process-steps-grid">
+                    <div class="process-step">
+                        <div class="step-num">01</div>
+                        <h3>Discover</h3>
+                        <p>Learn the space, needs, and desired result to guide to the fitting collection.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num">02</div>
+                        <h3>Personalize</h3>
+                        <p>Choose the curated design and add the appropriate personal wall color touch.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num">03</div>
+                        <h3>Prepare</h3>
+                        <p>Coordinate details, materials, scheduling, and project preparation.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num">04</div>
+                        <h3>Build</h3>
+                        <p>Bring the transformation to life with professional project coordination.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num">05</div>
+                        <h3>Enjoy</h3>
+                        <p>Complete finishing details, clean the project area, and walkthrough your new space.</p>
+                    </div>
+                </div>
+
+                <div class="process-tagline">
+                    <p>YOU RELAX. WE WORK FOR YOU.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & FOOTER SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-card text-center">
+                    <div class="section-tag">DM HOME IMPROVEMENT</div>
+                    <h2 class="brand-closing-heading">REFRESH. REFOCUS. REIMAGINE.</h2>
+                    <p class="contact-subtitle">Your new bathroom starts with a conversation.</p>
+                    <p class="contact-desc">You've seen what's possible. Now let's find the design that feels right for your home.</p>
+
+                    <div class="contact-cta-wrap">
+                        <a href="mailto:info@dmhomeimprovement.com" class="btn btn-primary">Schedule Consultation</a>
+                        <a href="print_v2.html" target="_blank" class="btn btn-secondary">Open Print Book (v2)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>DM HOME IMPROVEMENT</h3>
+                <p>Master Bathroom Design Catalogue</p>
+                <p class="footer-tagline">REFRESH. REFOCUS. REIMAGINE.</p>
             </div>
             
-            <div class="image-wrapper" id="image-wrapper">
-              <img id="showcase-image" src="assets/images/silver_timeless_render.jpg" alt="Timeless Silver Signature Custom Tile Shower Rendering" loading="eager">
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="#welcome">Welcome</a>
+                <a href="#curator">Design Curator</a>
+                <a href="#collections">Curated Collections</a>
+                <a href="#process">Our Process</a>
+                <a href="print_v2.html" target="_blank">Print Catalogue (v2)</a>
             </div>
 
-            <div class="viewport-hint">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-              <span>100% Photorealistic Render matching DMHI Craftsman Benchmarks</span>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>📍 Charlotte, NC & Surrounding Areas</p>
+
+                <p>✉️ info@dmhomeimprovement.com</p>
             </div>
-          </div>
-
-          <!-- Design Details Panel -->
-          <div class="design-details-panel">
-            <div class="panel-header">
-              <h4>Design Philosophy</h4>
-              <p class="design-story-text" id="showcase-story">
-                Custom walk-in tile shower featuring polished 12x24 marble wall tile to ceiling, matte floor tile, Muse Grey vanity, and Harlow brushed nickel fixtures for a 5-star hotel spa feel. Our #1 most requested package.
-              </p>
-            </div>
-
-            <div class="curated-includes-box">
-              <h5 class="box-title">Curated Collections Featured</h5>
-              <ul class="includes-list" id="includes-list">
-                <!-- Filled via JS -->
-              </ul>
-            </div>
-
-            <div class="curator-note-card" style="margin-top:16px; background:#FAF7F0; border-left:3px solid var(--accent-gold); padding:10px 14px; border-radius:4px;">
-              <p style="font-family:'Playfair Display', serif; font-size:0.9rem; font-style:italic; color:var(--primary-dark);" id="showcase-curator-quote">“Timeless Signature is our most requested remodel because it strikes the perfect balance—custom marble tile shower, Harlow fixtures, and timeless elegance.” — Danielle Felice</p>
-              <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase; letter-spacing:0.08em;">— Danielle Felice | Design Curator</span>
-            </div>
-
-            <div class="panel-action" style="margin-top:20px;">
-              <a href="#contact" class="btn btn-gold btn-block">
-                Schedule Consultation For Silver Signature
-              </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GO GOLD COLLECTION FEATURED SANCTUARY (Matching Page 13) -->
-  <section class="section" id="gold-spa" style="background:#001A33; color:#FFFFFF; padding:80px 0;">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:40px;">
-        <span style="color:var(--accent-gold); font-size:0.8rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase;">Curated Portfolio Tier | GO GOLD COLLECTION</span>
-        <h2 style="font-family:'Playfair Display', serif; font-size:2.8rem; color:#FFFFFF; margin-top:6px;">GOLD COLLECTION: Luxury Without Compromise</h2>
-        <p style="font-family:'Playfair Display', serif; font-style:italic; font-size:1.2rem; color:var(--accent-gold);">"Your Everyday Escape — Spa-Inspired Sanctuary"</p>
-      </div>
-
-      <div style="border-radius:12px; overflow:hidden; border:2px solid var(--accent-gold); box-shadow:0 16px 48px rgba(0,0,0,0.4); margin-bottom:30px;">
-        <img src="assets/images/gold_spa_master_render.jpg" alt="Gold Collection Luxury Spa Sanctuary Render" style="width:100%; height:auto; display:block;">
-      </div>
-
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px;">
-        <div style="background:rgba(255,255,255,0.08); padding:20px; border-radius:8px; border-left:4px solid var(--accent-gold);">
-          <h4 style="color:var(--accent-gold); font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:4px;">Radiant Heated Tile Floors</h4>
-          <p style="font-size:0.8rem; color:#E2E8F0;">Digital smart thermostat floor system included standard for ultimate morning comfort.</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.08); padding:20px; border-radius:8px; border-left:4px solid var(--accent-gold);">
-          <h4 style="color:var(--accent-gold); font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:4px;">Ceiling-Height Calacatta Tile</h4>
-          <p style="font-size:0.8rem; color:#E2E8F0;">Full floor-to-ceiling Calacatta Gold marble-look tile surround for a true 5-star spa feel.</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.08); padding:20px; border-radius:8px; border-left:4px solid var(--accent-gold);">
-          <h4 style="color:var(--accent-gold); font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:4px;">Oversized 30" Quartz Niche</h4>
-          <p style="font-size:0.8rem; color:#E2E8F0;">18" H x 30" W (2 stud bays) with custom quartz shelf and warm LED accent illumination.</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.08); padding:20px; border-radius:8px; border-left:4px solid var(--accent-gold);">
-          <h4 style="color:var(--accent-gold); font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:4px;">78" Custom Glass & Gold</h4>
-          <p style="font-size:0.8rem; color:#E2E8F0;">Custom heavy duty frameless glass enclosure paired with a brushed gold thermostatic shower suite.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Trade Standards Manual (Matching Page 14) -->
-  <section class="section" id="standards" style="background:#FAF9F6;">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tagline">Quality Assurance Bible</span>
-        <h2 class="section-title">Technical Trade Standards & Craftsmanship Manual</h2>
-        <p class="section-description">
-          The Craftsmanship Benchmarks Required of All Trade Crews
-        </p>
-      </div>
-
-      <div class="trade-standards-grid">
-        <div class="trade-card">
-          <h4>2.1 Schluter Trim & Transition Standard</h4>
-          <p style="font-size:0.82rem; color:#475569;">
-            <strong>Mandatory Metal Edging:</strong> All exposed tile edges (niches, wall terminations, window jambs) MUST use Schluter metal trim profiles color-matched to plumbing hardware.<br>
-            <strong>45° Miter Cuts:</strong> Outside corners must be mitered cleanly at 45°.
-          </p>
-        </div>
-        <div class="trade-card">
-          <h4>2.2 Shower Door 78-Inch Height Standard</h4>
-          <p style="font-size:0.82rem; color:#475569;">
-            <strong>Standard Opening Height:</strong> 78 Inches is the official DMHI company standard height for all shower glass doors across Matte Black, Brushed Nickel, and Gold finishes.
-          </p>
-        </div>
-        <div class="trade-card">
-          <h4>2.3 Comprehensive 4-Surface Painting</h4>
-          <p style="font-size:0.82rem; color:#475569;">
-            <strong>Non-Negotiable Scope:</strong> Includes 4 distinct surfaces: <em>Walls</em> (moisture-resistant satin), <em>Trim/Baseboards</em> (semi-gloss), <em>Doors</em> (durable enamel), and <em>Ceiling</em> (flat with mold inhibitor).
-          </p>
-        </div>
-        <div class="trade-card">
-          <h4>2.4 Post-Job Turnover & Deep Cleaning</h4>
-          <p style="font-size:0.82rem; color:#475569;">
-            <strong>White Glove Turnover:</strong> Daily rough-cleans followed by our professional deep-cleaning team to sanitize fixtures, wipe tile dust, and polish glass before final walkthrough.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5-Step Process Timeline Section (Matching Page 16) -->
-  <section class="section" id="process" style="background:#FFFFFF; border-top:1px solid var(--border-color);">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tagline">The DM Distinction</span>
-        <h2 class="section-title">A Clear Process. A Beautiful Result.</h2>
-        <p class="section-description">
-          You Choose Your Bathroom. We Take It From There. You Relax. We Work for You.
-        </p>
-      </div>
-
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:20px; text-align:center; margin-top:40px;">
-        <div style="background:#FAF9F6; padding:24px 16px; border-radius:8px; border:1px solid var(--border-color);">
-          <div style="width:46px; height:46px; background:var(--primary-dark); color:var(--accent-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:700; margin:0 auto 12px auto; border:2px solid var(--accent-gold);">01</div>
-          <h4 style="font-size:0.85rem; font-weight:700; color:var(--primary-dark); text-transform:uppercase; margin-bottom:6px;">DISCOVER</h4>
-          <p style="font-size:0.78rem; color:#64748B;">Explore curated collections and evaluate your bathroom footprint.</p>
-        </div>
-        <div style="background:#FAF9F6; padding:24px 16px; border-radius:8px; border:1px solid var(--border-color);">
-          <div style="width:46px; height:46px; background:var(--primary-dark); color:var(--accent-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:700; margin:0 auto 12px auto; border:2px solid var(--accent-gold);">02</div>
-          <h4 style="font-size:0.85rem; font-weight:700; color:var(--primary-dark); text-transform:uppercase; margin-bottom:6px;">PERSONALIZE</h4>
-          <p style="font-size:0.78rem; color:#64748B;">Tailor finishes and paint with Danielle's curator guidance.</p>
-        </div>
-        <div style="background:#FAF9F6; padding:24px 16px; border-radius:8px; border:1px solid var(--border-color);">
-          <div style="width:46px; height:46px; background:var(--primary-dark); color:var(--accent-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:700; margin:0 auto 12px auto; border:2px solid var(--accent-gold);">03</div>
-          <h4 style="font-size:0.85rem; font-weight:700; color:var(--primary-dark); text-transform:uppercase; margin-bottom:6px;">PREPARE</h4>
-          <p style="font-size:0.78rem; color:#64748B;">Confirm locked material orders, schedules, and site prep.</p>
-        </div>
-        <div style="background:#FAF9F6; padding:24px 16px; border-radius:8px; border:1px solid var(--border-color);">
-          <div style="width:46px; height:46px; background:var(--primary-dark); color:var(--accent-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:700; margin:0 auto 12px auto; border:2px solid var(--accent-gold);">04</div>
-          <h4 style="font-size:0.85rem; font-weight:700; color:var(--primary-dark); text-transform:uppercase; margin-bottom:6px;">BUILD</h4>
-          <p style="font-size:0.78rem; color:#64748B;">Expert craftsmen execute tile, plumbing, and trim with precision.</p>
-        </div>
-        <div style="background:#FAF9F6; padding:24px 16px; border-radius:8px; border:1px solid var(--border-color);">
-          <div style="width:46px; height:46px; background:var(--primary-dark); color:var(--accent-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:700; margin:0 auto 12px auto; border:2px solid var(--accent-gold);">05</div>
-          <h4 style="font-size:0.85rem; font-weight:700; color:var(--primary-dark); text-transform:uppercase; margin-bottom:6px;">ENJOY</h4>
-          <p style="font-size:0.78rem; color:#64748B;">Deep-cleaned turnover and final white-glove walkthrough.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Consultation Contact Section (Matching Page 17) -->
-  <section class="section" id="contact" style="background:#FAF9F6; border-top:1px solid var(--border-color);">
-    <div class="container text-center" style="max-width:800px;">
-      <span class="section-tagline">Start Your Transformation</span>
-      <h2 class="section-title">Schedule Your White Glove Consultation</h2>
-      <p class="section-description">
-        Ready to remodel your bathroom without the stress? Connect with Danielle Felice and the DM Home Improvement team to review your footprint and build your curated collection.
-      </p>
-
-      <div style="background:#FFFFFF; padding:32px; border-radius:12px; box-shadow:var(--shadow-md); border:1px solid var(--border-color); margin-top:30px; text-align:left;">
-        <h3 style="font-family:'Playfair Display', serif; font-size:1.5rem; color:var(--primary-dark); margin-bottom:4px;">Danielle & Derek Myers</h3>
-        <p style="font-size:0.88rem; color:#475569; margin-bottom:12px;">Design Curator & Master Craftsman — DM Home Improvement LLC</p>
-        <p style="font-size:0.85rem; color:#334155;"><strong>Direct Office:</strong> (910) 557-0915 | <strong>Curator Email:</strong> planning@dmhomeimprovementllc.com</p>
-        <p style="font-size:0.82rem; color:var(--accent-gold); font-weight:700; margin-top:8px;">The DM Turnkey White Glove Experience™</p>
         
-        <div style="margin-top:24px; display:flex; gap:16px; flex-wrap:wrap;">
-          <a href="print_v2.html" target="_blank" class="btn btn-gold btn-lg">View Complete 17-Page Print Catalogue</a>
-          <button class="btn btn-primary btn-lg" onclick="alert('Thank you for requesting a consultation! Our team will contact you within 24 hours.')">Book Consultation</button>
+        <div class="footer-bottom text-center">
+            <p>Copyright © DM Home Improvement LLC 2026. All Rights Reserved. | The DM Turnkey White Glove Experience™</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Footer -->
-    <!-- Official Company Footer (Matching Corporate Site) -->
-  <footer style="background:#FFFFFF; color:var(--text-main); padding:60px 0 20px 0; border-top:1px solid var(--border-color);">
-    <div class="container">
-      <div class="footer-grid-wrapper" style="display:grid; grid-template-columns:35% 25% 40%; gap:40px; margin-bottom:40px; align-items:start;">
-        
-        <!-- Left: Logo & Company Bio -->
-        <div>
-          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
-            <img src="assets/images/logo.png" alt="DM Home Improvement Shield Logo" style="height:60px; width:auto;">
-            <div>
-              <strong style="font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent-gold); display:block;">DM HOME IMPROVEMENT</strong>
-              <span style="font-family:'Playfair Display', serif; font-size:1.2rem; font-weight:700; color:var(--primary-dark);">Bathroom Catalogue</span>
-            </div>
-          </div>
-          <p style="font-size:0.85rem; color:#475569; line-height:1.6; margin-bottom:16px;">
-            Transforming outdated homes into beautiful, functional living spaces across the Carolinas since 2004. Licensed, insured, and backed by more than 20 years of trusted craftsmanship.
-          </p>
-          <div style="display:flex; gap:14px; font-size:1.1rem; color:var(--primary-dark);">
-            <a href="#" style="color:var(--primary-dark); text-decoration:none;" title="Facebook">🌐</a>
-            <a href="#" style="color:var(--primary-dark); text-decoration:none;" title="Instagram">📸</a>
-            <a href="#" style="color:var(--primary-dark); text-decoration:none;" title="YouTube">▶️</a>
-            <a href="#" style="color:var(--primary-dark); text-decoration:none;" title="Pinterest">📌</a>
-          </div>
-        </div>
-
-        <!-- Middle: Navigation -->
-        <div>
-          <h4 style="font-family:var(--font-body); font-size:0.82rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--primary-dark); margin-bottom:16px;">NAVIGATION</h4>
-          <ul style="list-style:none; font-size:0.85rem; display:flex; flex-direction:column; gap:10px;">
-            <li><a href="#welcome" style="color:#475569; text-decoration:none;">Welcome</a></li>
-            <li><a href="#curator" style="color:#475569; text-decoration:none;">Design Curator</a></li>
-            <li><a href="#collections" style="color:#475569; text-decoration:none;">Curated Collections</a></li>
-            <li><a href="#standards" style="color:#475569; text-decoration:none;">Trade Standards</a></li>
-            <li><a href="#process" style="color:#475569; text-decoration:none;">5-Step Process</a></li>
-            <li><a href="print_v2.html" target="_blank" style="color:var(--accent-gold); font-weight:700; text-decoration:none;">📄 Print Catalogue (v2)</a></li>
-          </ul>
-        </div>
-
-        <!-- Right: Official Contact Us -->
-        <div>
-          <h4 style="font-family:var(--font-body); font-size:0.82rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--primary-dark); margin-bottom:16px;">CONTACT US</h4>
-          <p style="font-size:0.85rem; color:#334155; line-height:1.7; margin-bottom:8px;">
-            📍 <strong>Address:</strong> 3440 Toringdon Way Suite 205, Charlotte, NC 28277
-          </p>
-          <p style="font-size:0.85rem; color:#334155; line-height:1.7; margin-bottom:8px;">
-            📞 <strong>Phone:</strong> <a href="tel:9105570915" style="color:var(--primary-dark); font-weight:700; text-decoration:none;">(910) 557-0915</a>
-          </p>
-          <p style="font-size:0.85rem; color:#334155; line-height:1.7;">
-            ✉️ <strong>Email:</strong> <a href="mailto:planning@dmhomeimprovementllc.com" style="color:var(--accent-gold); font-weight:600; text-decoration:none;">planning@dmhomeimprovementllc.com</a>
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Copyright Sub-Footer Bar -->
-      <div style="border-top:1px solid var(--border-color); padding-top:20px; display:flex; justify-content:space-between; align-items:center; font-size:0.78rem; color:#64748B; flex-wrap:wrap; gap:12px;">
-        <div>
-          Copyright © DM Home Improvement LLC 2026. All Rights Reserved.
-        </div>
-        <div>
-          <a href="#" style="color:#64748B; text-decoration:none; margin-right:16px;">Privacy Policy</a> | 
-          <a href="#" style="color:#64748B; text-decoration:none; margin-left:16px;">Terms of Service</a>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- JS Logic -->
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
